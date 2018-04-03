@@ -9,8 +9,9 @@ import java.net.MulticastSocket;
 public class MulticastRecive extends Thread {
 	private MulticastSocket s;
 	InetAddress group;
+
 	public MulticastRecive() {
-		
+
 		try {
 			group = InetAddress.getByName("228.5.6.7");
 			s = new MulticastSocket(6789);
@@ -49,6 +50,17 @@ public class MulticastRecive extends Thread {
 	private void processar(DatagramPacket messageIn) {
 		// TODO Auto-generated method stub
 		// processa a mensagem
+	}
+
+	public void procurarArquivo(String entrada) {
+		// TODO
+		// enviar uma mensagem no multicast para procurar o arquivo
+		// quanto tempo esperar uma resposta?
+
+		// gerar uma lista de peer que tem o arquivo
+		// escolhe o melhor
+		// abre conexao unicast
+		// ou retorna que o arquivo nao foi encontrado
 	}
 
 }
