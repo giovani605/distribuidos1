@@ -56,7 +56,7 @@ public class MulticastRecive extends Thread {
 		// TODO
 		// enviar uma mensagem no multicast para procurar o arquivo
 		// quanto tempo esperar uma resposta?
-
+|
 		// gerar uma lista de peer que tem o arquivo
 		// escolhe o melhor
 		// abre conexao unicast
