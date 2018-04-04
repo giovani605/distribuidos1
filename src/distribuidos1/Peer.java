@@ -25,12 +25,13 @@ public class Peer {
 			executarComando(entrada);
 		}
 		System.out.println("Terminado!!!");
+		scan.close();
 		fechar();
 
 	}
 
 	private void fechar() {
-
+		// fechar os casts e as portas
 	}
 
 	private void executarComando(String entrada) {

@@ -26,6 +26,8 @@ public class MulticastRecive extends Thread {
 	@Override
 	public void run() {
 		boolean flag = true;
+		// se anunciar?
+		
 		byte[] buffer = new byte[1000];
 		while (flag) {
 			// recebe as mensagens e depois ve oq faz
@@ -50,6 +52,15 @@ public class MulticastRecive extends Thread {
 	private void processar(DatagramPacket messageIn) {
 		// TODO Auto-generated method stub
 		// processa a mensagem
+			// aqui as mensangem seram apenas um texto sem muito sem criptografia
+		// tipos de mensagem
+		 // anuncio de um novo node
+			// se receber o anuncio de um novo node tenho q resposter que eu existo
+		// se anunciar com a lista de arquivos?
+		// caso utilizar essa abordagem preciso reanunciar na rede a canal novo arquivo
+		
+		// ou utilizar respostas on demand
+		
 	}
 
 	public void procurarArquivo(String entrada) {
