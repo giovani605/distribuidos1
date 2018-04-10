@@ -76,5 +76,8 @@ public class MulticastRecive extends Thread {
 		// abre conexao unicast
 		// ou retorna que o arquivo nao foi encontrado
 	}
+	public void mandarMsg(String teste) {
+		
+	}
 
 }
