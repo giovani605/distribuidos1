@@ -7,10 +7,10 @@ public class Peer {
 	// controla o socket multicast
 	ControladorMulticast multicast;
 
-	public Peer() {
+	public Peer(String chave) {
 		// inicia os sockets e etc.
 		// iniciar o programa
-		multicast = new ControladorMulticast();
+		multicast = new ControladorMulticast(chave);
 		// abre uma thread que vai receber o multicast
 		multicast.start();
 		
@@ -42,7 +42,9 @@ public class Peer {
 	}
 
 	public static void main(String[] args) {
-		Peer peer = new Peer();
+		System.out.println("Digite a chave");
+		String chave = new Scanner(System.in).nextLine();
+		Peer peer = new Peer(chave);
 		peer.rodar();
 	}
 
