@@ -88,7 +88,8 @@ public class ControladorMulticast extends Thread {
 		}
 		if (cmd.equals("quero")) {
 			System.out.println(messageIn.getAddress().toString() + " quer " + vet[1]);
-
+			// se tenho o arquivo
+				// mando q tenho
 		}
 		// tipos de mensagem
 		// anuncio de um novo node
