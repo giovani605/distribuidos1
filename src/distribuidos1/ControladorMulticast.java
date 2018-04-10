@@ -6,11 +6,12 @@ import java.net.InetAddress;
 import java.net.MulticastSocket;
 
 // Essa classe processa as mensagens que vem do multicast
-public class MulticastRecive extends Thread {
+public class ControladorMulticast extends Thread {
 	private MulticastSocket s;
 	InetAddress group;
 
-	public MulticastRecive() {
+	//	cria o controlador
+	public ControladorMulticast() {
 
 		try {
 			group = InetAddress.getByName("228.5.6.7");
@@ -23,6 +24,7 @@ public class MulticastRecive extends Thread {
 
 	}
 
+	// roda infinitamente esperando mensagens
 	@Override
 	public void run() {
 		boolean flag = true;

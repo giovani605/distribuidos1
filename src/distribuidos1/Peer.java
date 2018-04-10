@@ -5,13 +5,15 @@ import java.util.Scanner;
 // principal
 public class Peer {
 	// controla o socket multicast
-	MulticastRecive multicast;
+	ControladorMulticast multicast;
 
 	public Peer() {
+		// inicia os sockets e etc.
 		// iniciar o programa
-		multicast = new MulticastRecive();
+		multicast = new ControladorMulticast();
 		// abre uma thread que vai receber o multicast
 		multicast.start();
+		
 
 	}
 
