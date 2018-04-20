@@ -12,6 +12,7 @@ public class ControladorMulticast extends Thread {
 	String chave;
 
 	// cria o controlador
+	// relaxa buranello
 	public ControladorMulticast(String c) {
 
 		try {
